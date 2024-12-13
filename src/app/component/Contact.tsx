@@ -1,8 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
-import * as Yup from 'yup'
+import { Formik, Form, Field } from 'formik'
 import { FaWhatsapp } from "react-icons/fa";
 
 const initialValues = {
@@ -21,6 +20,8 @@ export default function CreativeStudioContact() {
     setIsSubmitted(true)
   }
 
+  console.log("isSubmitted", isSubmitted)
+
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 overflow-hidden">
       <div className="w-full max-w-4xl relative">
@@ -31,8 +32,8 @@ export default function CreativeStudioContact() {
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
           <div className="bg-gradient-to-br from-purple-600 to-blue-500 p-12 md:w-2/5 flex flex-col justify-between">
             <div>
-              <h2 className="text-4xl font-semibold text-white mb-6 font-title">Let's create something amazing together!</h2>
-              <p className="text-blue-100 mb-6 font-title">Fill out the form and we'll be in touch as soon as possible.</p>
+              <h2 className="text-4xl font-semibold text-white mb-6 font-title">Let us create something amazing together!</h2>
+              <p className="text-blue-100 mb-6 font-title">Fill out the form and we will be in touch as soon as possible.</p>
             </div>
             <div className="flex space-x-4">
               {/* <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
